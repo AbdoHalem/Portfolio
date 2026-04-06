@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdelrahman Abdelhalem | Portfolio</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+      :root {
+        --bg: #0b0f19;
+        --panel: #111827;
+        --panel-2: #0f172a;
+        --text: #f8fafc;
+        --muted: #9ca3af;
+        --accent: #38bdf8;
+        --border: rgba(255, 255, 255, 0.08);
+      }
+
+      html { scroll-behavior: smooth; }
+      body {
+        background: radial-gradient(circle at top, #111827 0%, #0b0f19 55%, #050816 100%);
+        color: var(--text);
+        font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      .glass {
+        background: rgba(17, 24, 39, 0.78);
+        backdrop-filter: blur(14px);
+        border: 1px solid var(--border);
+        box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+      }
+      .muted { color: var(--muted); }
+      .hero-title {
+        letter-spacing: -0.04em;
+        line-height: 0.95;
+      }
+      .section-title {
+        letter-spacing: -0.03em;
+      }
+      .pill {
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.03);
+        color: #e5e7eb;
+        border-radius: 999px;
+        padding: 0.55rem 0.9rem;
+        font-size: 0.92rem;
+      }
+      .project-card {
+        transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+      }
+      .project-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(56, 189, 248, 0.35) !important;
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+      }
+      .project-badge {
+        font-size: 0.75rem;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+      .link-soft {
+        color: #dbeafe;
+        text-decoration: none;
+      }
+      .link-soft:hover { color: #ffffff; text-decoration: underline; }
+      .divider {
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,.12), transparent);
+      }
+      .nav-link { color: #cbd5e1 !important; }
+      .nav-link:hover { color: #ffffff !important; }
+      .btn-accent {
+        background: linear-gradient(135deg, #38bdf8, #2563eb);
+        border: none;
+        color: white;
+      }
+      .btn-accent:hover { opacity: 0.95; color: white; }
+      .icon-box {
+        width: 48px;
+        height: 48px;
+        border-radius: 14px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(56, 189, 248, 0.12);
+        color: #7dd3fc;
+        border: 1px solid rgba(56, 189, 248, 0.16);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark py-3 sticky-top glass border-0">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#top">Abdelrahman Abdelhalem</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto gap-lg-3 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-sm btn-accent px-3" href="https://github.com/AbdoHalem" target="_blank" rel="noreferrer">GitHub</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="top" class="container py-5">
+      <section class="row align-items-center gy-5 py-4">
+        <div class="col-lg-7">
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <span class="pill">Junior .NET Developer</span>
+            <span class="pill">ASP.NET Core MVC</span>
+            <span class="pill">C#</span>
+            <span class="pill">SQL Server</span>
+          </div>
+          <h1 class="display-3 fw-bold hero-title mb-4">Abdelrahman Abdelhalem</h1>
+          <p class="lead muted col-lg-10 mb-4">
+            I build clean, scalable web applications and practical software solutions with a strong focus on backend development,
+            structured code, and user-friendly interfaces.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#projects" class="btn btn-accent px-4 py-2 fw-semibold">View Projects</a>
+            <a href="#contact" class="btn btn-outline-light px-4 py-2 fw-semibold">Contact Me</a>
+          </div>
+        </div>
+        <div class="col-lg-5 text-lg-end text-center">
+          <div class="glass rounded-4 p-4 p-lg-5 d-inline-block">
+            <img src="myImage.jpg" alt="Abdelrahman Abdelhalem" class="img-fluid rounded-4 border border-secondary-subtle" style="max-width: 320px; object-fit: cover;" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="py-5">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-7">
+            <div class="glass rounded-4 p-4 p-lg-5 h-100">
+              <h2 class="section-title fw-bold mb-3">About Me</h2>
+              <p class="muted mb-0">
+                I am focused on backend and full-stack web development using ASP.NET Core MVC, Entity Framework Core, JavaScript,
+                and SQL Server. I enjoy turning ideas into working products with clean architecture, maintainable code, and a polished UI.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="glass rounded-4 p-4 p-lg-5 h-100">
+              <h2 class="section-title fw-bold mb-3">What I Build</h2>
+              <ul class="list-unstyled mb-0 muted d-grid gap-2">
+                <li>• E-commerce platforms</li>
+                <li>• Admin dashboards and CRUD systems</li>
+                <li>• JavaScript web applications</li>
+                <li>• Database-driven business systems</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="py-5">
+        <div class="d-flex justify-content-between align-items-end gap-3 mb-4 flex-wrap">
+          <div>
+            <p class="text-uppercase muted small mb-1">Selected work</p>
+            <h2 class="section-title fw-bold mb-0">Featured Projects</h2>
+          </div>
+          <p class="muted mb-0">A focused selection of the most relevant projects from my GitHub profile.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <article class="glass rounded-4 p-4 project-card h-100">
+              <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+                <div class="icon-box"><i class="fa-solid fa-cart-shopping"></i></div>
+                <span class="project-badge badge text-bg-primary">ASP.NET Core MVC</span>
+              </div>
+              <h3 class="h4 fw-bold">Halem Store</h3>
+              <p class="muted mb-3">
+                A full-stack e-commerce web application with product browsing, category filtering, cart, checkout, order history,
+                role-based admin management, and stock restoration on cancelled orders.
+              </p>
+              <div class="d-flex flex-wrap gap-2 mb-4">
+                <span class="pill">Generic Repository</span>
+                <span class="pill">Unit of Work</span>
+                <span class="pill">Identity</span>
+                <span class="pill">SQL Server</span>
+              </div>
+              <div class="d-flex gap-3 flex-wrap">
+                <a class="link-soft fw-semibold" href="http://halemstore.runasp.net/" target="_blank" rel="noreferrer">Live Demo</a>
+                <a class="link-soft fw-semibold" href="https://github.com/AbdoHalem/E-Commerce_MVC_ASP_DotNET_Core" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-6">
+            <article class="glass rounded-4 p-4 project-card h-100">
+              <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+                <div class="icon-box"><i class="fa-solid fa-building-columns"></i></div>
+                <span class="project-badge badge text-bg-info text-dark">JavaScript SPA</span>
+              </div>
+              <h3 class="h4 fw-bold">Student Affairs System</h3>
+              <p class="muted mb-3">
+                A dynamic single-page application for managing university records using vanilla JavaScript, component-based design,
+                and a decoupled frontend/backend structure with a REST API.
+              </p>
+              <div class="d-flex flex-wrap gap-2 mb-4">
+                <span class="pill">Vanilla JS</span>
+                <span class="pill">ES6+</span>
+                <span class="pill">SPA</span>
+                <span class="pill">REST API</span>
+              </div>
+              <div class="d-flex gap-3 flex-wrap">
+                <a class="link-soft fw-semibold" href="https://github.com/AbdoHalem/ITI_Student_Affairs_System" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="link-soft fw-semibold" href="https://abdohalem.github.io/ITI_Student_Affairs_System/" target="_blank" rel="noreferrer">Live Demo</a>
+              </div>
+            </article>
+          </div>
+      </section>
+
+      <section id="skills" class="py-5">
+        <div class="glass rounded-4 p-4 p-lg-5">
+          <p class="text-uppercase muted small mb-1">Capabilities</p>
+          <h2 class="section-title fw-bold mb-4">Skills & Technologies</h2>
+          <div class="row g-3">
+            <div class="col-md-4"><div class="pill w-100 text-center py-3">C#</div></div>
+            <div class="col-md-4"><div class="pill w-100 text-center py-3">ASP.NET Core MVC</div></div>
+            <div class="col-md-4"><div class="pill w-100 text-center py-3">ASP.NET</div></div>
+            <div class="col-md-4"><div class="pill w-100 text-center py-3">Entity Framework Core</div></div>
+            <div class="col-md-4"><div class="pill w-100 text-center py-3">SQL Server</div></div>
+            <div class="col-md-4"><div class="pill w-100 text-center py-3">NodeJs</div></div>
+            <div class="col-md-4"><div class="pill w-100 text-center py-3">Angular</div></div>
+            <div class="col-md-4"><div class="pill w-100 text-center py-3">JavaScript (ES6+)</div></div>
+            <div class="col-md-4"><div class="pill w-100 text-center py-3">HTML5 / CSS3 / Bootstrap</div></div>
+            <div class="col-md-4"><div class="pill w-100 text-center py-3">REST APIs</div></div>
+            <div class="col-md-4"><div class="pill w-100 text-center py-3">CRM</div></div>
+            <div class="col-md-4"><div class="pill w-100 text-center py-3">Data Warehouse & ETL</div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-5 pb-4">
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <div class="glass rounded-4 p-4 p-lg-5 h-100">
+              <p class="text-uppercase muted small mb-1">Contact</p>
+              <h2 class="section-title fw-bold mb-3">Let’s work together</h2>
+              <p class="muted mb-4">
+                I’m available for web development projects, ASP.NET Core work, backend tasks, and clean UI implementation.
+              </p>
+              <div class="d-flex flex-column gap-3">
+                <div><i class="fa-brands fa-github me-2"></i><a class="link-soft" href="https://github.com/AbdoHalem" target="_blank" rel="noreferrer">github.com/AbdoHalem</a></div>
+                <div><i class="fa-brands fa-linkedin me-2"></i><a class="link-soft" href="https://www.linkedin.com/in/abdelrahman-abdelhalem-28040a230" target="_blank" rel="noreferrer">LinkedIn Profile</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="glass rounded-4 p-4 p-lg-5 h-100">
+              <h3 class="fw-bold mb-3">Focus Areas</h3>
+              <ul class="list-unstyled muted mb-0 d-grid gap-2">
+                <li>• ASP.NET Core MVC applications</li>
+                <li>• E-commerce platforms</li>
+                <li>• Admin dashboards</li>
+                <li>• CRUD systems</li>
+                <li>• JavaScript-based web apps</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container pb-4">
+      <div class="divider mb-4"></div>
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 muted small">
+        <span>© 2026 Abdelrahman Abdelhalem</span>
+        <span>Built with Bootstrap and a clean, minimal layout.</span>
+      </div>
+    </footer>
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
